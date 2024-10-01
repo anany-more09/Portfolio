@@ -1,0 +1,193 @@
+
+@media screen and (min-width: 1200px) {
+    #hamburger-nav {
+      display: none; /* Hide hamburger navigation on desktop */
+    }
+  
+    .menu-links {
+      transform: translateX(-100%); /* Ensure menu is hidden offscreen */
+    }
+  }
+  
+  @media screen and (max-width: 777px)
+  {
+    .details img {
+      width: 140px; 
+      height: 111px;
+      object-fit: cover; 
+      border-radius: 10px; 
+      margin-bottom: 15px; 
+    }
+   
+   
+  }
+  
+  @media screen and (max-width: 1400px) {
+    #profile {
+      height: 83vh;
+      margin-bottom: 6rem;
+    }
+    .about-containers {
+      flex-wrap: wrap;
+    }
+    #contact,
+    #projects {
+      height: fit-content;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    #desktop-nav {
+      display: none; /* Hide desktop navigation */
+    }
+    #hamburger-nav {
+      display: flex; /* Show hamburger navigation */
+      position: relative; /* Allow positioning */
+      background-color: white;
+    }
+  
+    #experience,
+    .experience-details-container {
+      margin-top: 2rem; /* Add margin to experience section */
+    }
+    #profile,
+    .section-container {
+      display: block; /* Make profile and section containers block elements */
+    }
+    .arrow {
+      display: none; /* Hide arrow elements */
+    }
+    section,
+    .section-container {
+      height: fit-content; /* Allow sections to fit content */
+    }
+    section {
+      margin: 0 5%; /* Set horizontal margin for sections */
+    }
+    .section__pic-container {
+      width: 275px; /* Set width for picture container */
+      height: 275px; /* Set height for picture container */
+      margin: 0 auto 2rem; /* Center and set bottom margin */
+    }
+    .about-containers {
+      margin-top: 0; /* Remove top margin */
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    #hamburger-nav {
+      position: sticky; /* Make the hamburger navigation sticky */
+      top: 0; /* Stick to the top of the viewport */
+      z-index: 999; /* Ensure it stays on top of other elements */
+    }
+  
+    #contact,
+    footer {
+      height: 40vh; /* Set height for contact and footer sections */
+    }
+    #profile {
+      height: 83vh; /* Set height for profile section */
+      margin-bottom: 0; /* Remove bottom margin */
+    }
+    article {
+      font-size: 1rem; /* Set font size for articles */
+    }
+    footer nav {
+      height: fit-content; /* Allow footer nav to fit content */
+      margin-bottom: 2rem; /* Add bottom margin */
+    }
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+      flex-wrap: wrap; /* Allow wrapping for containers */
+    }
+    .contact-info-container {
+      margin: 0; /* Remove margin for contact info container */
+    }
+    .contact-info-container p,
+    .nav-links li a {
+      font-size: 1rem; /* Set font size for contact info and nav links */
+    }
+    .experience-sub-title {
+      font-size: 1.25rem; /* Set font size for experience subtitles */
+    }
+    .logo img {
+      width: 80px; /* Set width for logo image */
+    }
+    .nav-links {
+      flex-direction: column; /* Arrange nav links vertically */
+      gap: 1rem; /* Set gap between nav links */
+      text-align: center; /* Center-align text */
+    }
+    .section__pic-container {
+      width: auto; /* Set width for section picture container */
+      height: 46vw; /* Set height relative to viewport width */
+      justify-content: center; /* Center content */
+    }
+    .section__text__p2 {
+      font-size: 1.25rem; /* Set font size for section text */
+    }
+    .title {
+      font-size: 2rem; /* Set font size for titles */
+    }
+    .text-container {
+      text-align: justify; /* Justify text */
+    }
+  }
+  
+  .menu-links {
+    position: fixed; /* Use fixed to cover the full screen */
+    top: 0;
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: #f8f9fa; /* Set background color */
+    display: flex;
+    flex-direction: column; /* Arrange menu items vertically */
+    padding: 1.375rem; /* Add padding around the menu */
+    transform: translateX(-100%); /* Initially hide the menu */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for showing/hiding */
+    z-index: 999; /* Ensure it stays on top of other elements */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+  }
+  
+  .menu-links.open {
+    transform: translateX(0); /* Slide in from the left when open */
+  }
+  
+  .menu-links ul {
+    padding: 0; /* Remove default padding from the list */
+    list-style-type: none; /* Remove default list styles */
+  }
+  
+  .menu-links li {
+    margin: 1rem 0; /* Add vertical margin between menu items */
+  }
+  
+  .menu-links a {
+    color: #212529; /* Darker text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1.5rem; /* Adjust font size */
+    display: block; /* Make link fill the list item */
+    border-bottom: 2px dotted #dee2e6; /* Add a dotted underline */
+    padding: 0.5rem 0; /* Add padding for clickable area */
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
