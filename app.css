@@ -10,6 +10,7 @@
 body {
   
   font-family: "Poppins", sans-serif;
+  /* background: linear-gradient(to right, #f3f9ff44, #fc950523, #f8e4f23d, #f3f9ff48); */
 
 }
 
@@ -49,6 +50,7 @@ nav {
 
 .logo img{
   width: 100px;
+  margin-bottom: 0.01rem;
 }
 
 a {
@@ -84,9 +86,13 @@ a:hover {
 }
 
 .burger{
-  padding-top: 10px;
+  padding-top: 8px;
   height: 8vh;
+  position: relative; 
+  gap: 7rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.02);
 }
+
 
 
 
@@ -94,23 +100,21 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 24px;
-  width: 30px;
+  height: 23px; 
+  width: 28px;  
   cursor: pointer;
 }
 
+
 .hamburger-icon span {
-  width: 100%;
-  height: 2px;
-  background-color: darkgrey;
-  transition: all 0.3 ease-in-out;
+  display: block;
+  height: 3px;       /* Thickness of each line */
+  width: 100%;       /* Full width */
+  background-color: lightgrey; /* Color similar to the one in the image */
+  border-radius: 10px; /* Rounded edges */
+  transition: all 0.2s ease; 
 }
 
-/* Overall styles for the navigation */
-.burger {
-  position: relative; /* Ensure it positions correctly */
-
-}
 
 /* Styles for the menu links */
 .menu-links {
@@ -126,7 +130,7 @@ a:hover {
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
   z-index: 999; /* Ensure it stays on top of other elements */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.); 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
 
 }
 
@@ -161,6 +165,7 @@ a:hover {
   position: fixed;
   top: 0;        
   width: 100%;   
+  gap:  28rem;
   z-index: 1000;  
   height: 10vh;
   background-color: white; 
@@ -235,11 +240,18 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+
 }
 
 .section__text {
+
   align-self: center;
   text-align: center;
+  box-shadow: 0 3px 20px rgba(249, 255, 247, 0.462);
+  padding: 1.6rem;
+  border-radius: 20px;
+
+  
 }
 
 .section__text p {
@@ -259,12 +271,15 @@ section {
   font-size: 3rem;
   text-align: center;
 }
+#socials-container img{
+  color: grey;
+}
 
 #socials-container {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 /* ICONS */
@@ -272,7 +287,9 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+  
 }
+
 
 /* BUTTONS */
 
@@ -285,24 +302,25 @@ section {
 .btn {
   font-weight: 600;
   transition: all 300ms ease;
-  padding: 1rem;
+  padding: 0.8rem;
   width: 8rem;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid; /* Same border for both buttons */
-  background: none; /* Default background (none) for both */
-  color: rgb(53, 53, 53); /* Default text color */
+  border-radius: 3rem;
+  border: 0.1px solid rgba(212, 207, 207, 0.705);
+  background: none; 
+  color: rgb(53, 53, 53); 
 }
 
 /* Hover effect for both buttons */
 .btn:hover {
   cursor: pointer;
-  color: white; /* Text color changes to white */
-  background: rgb(0, 0, 0);
+  color: #ffffff; 
+  background: #4285f4;
+  border-color: none;
 }
 
 /* Additional hover effect for .btn-color-1 */
 .btn-color-1:hover {
-  background: rgb(0, 0, 0); /* Darker black for btn-color-1 on hover */
+  background: #4285f4 /* Darker black for btn-color-1 on hover */
 }
 
 
@@ -333,6 +351,13 @@ section {
 .about-pic {
   border-radius: 2rem;
 }
+.text-container p{
+
+  text-align: left;
+  padding:20px;
+  border-radius: 20px;
+}
+  
 
 .arrow {
   position: absolute;
@@ -345,10 +370,10 @@ section {
   flex: 1;
   background: white;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  /* border: rgb(53, 53, 53) 0.1rem solid; */
+  background: linear-gradient(to right, #a8fa052a, #fbfde8, #d3bbdd46, #f8f0fa, #d4ff0023);
   text-align: center;
-  /* box-shadow: 0px 4px 80px rgba(248, 252, 0, 0.584); */
+  box-shadow: 0px 4px 100px rgba(252, 0, 0, 0.119);
 }
 
 .section-container {
@@ -396,6 +421,7 @@ section {
   flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
+  border: none;
 }
 
 article {
@@ -416,8 +442,9 @@ article .icon {
 }
 
 .color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.126);
 }
 
 .project-img {
@@ -433,7 +460,8 @@ article .icon {
 
 .project-btn {
   color: black;
-  border-color: rgb(163, 163, 163);
+  border: 0.1px solid rgba(212, 207, 207, 0.705);
+
 }
 
 /* CONTACT */
@@ -448,6 +476,7 @@ article .icon {
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
+  gap: 1rem;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
@@ -479,13 +508,50 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
+  height: 10vh;
   margin: 0 1rem;
+
 }
 
 footer p {
   text-align: center;
+  
 }
+
+
+.links{
+  margin-bottom: 2rem;
+}
+
+.links ul {
+  display: flex; /* Makes the ul a flex container */
+  list-style: none; /* Removes the default bullet points */
+  padding: 0; /* Removes any default padding */
+  margin: 0; /* Removes any default margin */
+  justify-content: center; /* Centers the items while keeping them closer */
+  gap: 3rem;
+}
+
+
+.links li {
+  display: flex; /* Ensures li items align correctly */
+  align-items: center; /* Vertically centers the content */
+  justify-content: space-between;
+
+}
+
+.links a {
+  text-decoration: none; /* Removes underline from links */
+}
+.links a:hover{
+  cursor: pointer;
+}
+
+.links img {
+  width: 24px; /* Adjust the size of the icons */
+  height: auto;
+}
+
 
 
 
@@ -493,14 +559,18 @@ footer p {
 
 
 .expertise-section {
-  padding: 60px;
-  background-color: var(--bg-light); /* Using your existing CSS variable */
+  background-color: var(--bg-light);
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap; /* Allows articles to wrap to the next line if they don't fit */
-  gap: 20px; /* Space between articles */
+  justify-content: space-around;
+  flex-wrap: wrap; 
+  margin: 1px, 6px;
+  gap: 10px; 
+  padding: 8px 2px;
+  width: 90%;
+
 
 }
+
 
 .expert-title {
   width: 100%; /* Ensures the title spans across the section */
@@ -510,7 +580,8 @@ footer p {
 
 .expert-title h2 {
   font-size: 2rem;
-  color: var(--primary-text); /* Using your existing CSS variable */
+  color: var(--primary-text); 
+
 }
 .expertise-section .article a{
    background-color: none;
@@ -519,21 +590,43 @@ footer p {
 /* Style each article */
 .details {
   background-color: var(--bg-white); /* Using your existing CSS variable */
-  padding: 20px;
+  padding: 14px;
   border-radius: 8px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   box-shadow: 0px 4px 1000px rgba(227, 233, 225, 0.462);
-
-
-
   transition: transform 0.3s ease;
   flex: 1 1 calc(25% - 20px); 
-  max-width: 180px; 
+  max-width: 300px; 
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: baseline;
+
+
+}
+.head-1 h3{
+  background-color: #f907071b;
+  color: #ad1919c8;
+}
+.head-2 h3{
+ background-color: #bbe7fe52;
+ color: #166996;
+}
+
+.head-3 h3{
+ background-color: #e1ec1952;
+ color: #8f9609;
+}
+
+.head-4 h3{
+ background-color: #15f30935;
+ color: #10a008d2;
+}
+
+.details h3{
+  border-radius: 20px;
+  padding: 4px 20px;
+  width: auto;
 }
 
 .details:hover {

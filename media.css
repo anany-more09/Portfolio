@@ -44,6 +44,8 @@
       display: flex; /* Show hamburger navigation */
       position: relative; /* Allow positioning */
       background-color: white;
+      gap: 9rem;
+      
     }
   
     #experience,
@@ -80,7 +82,82 @@
       top: 0; /* Stick to the top of the viewport */
       z-index: 999; /* Ensure it stays on top of other elements */
     }
+    .section__text {
+
+      align-self: center;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.02);
+      padding: 1.6rem;
+      border-radius: 20px;
+   
+    }
+    .details {
+      background-color: var(--bg-white); /* Using your existing CSS variable */
+      padding: 14px;
+      border-radius: 1.2rem;
+      box-shadow: 0px 4px 1000px rgba(227, 233, 225, 0.462);
+      transition: transform 0.3s ease;
+      flex: 1 1 calc(25% - 20px); 
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: baseline;
+      border: 0.1px solid #D3BBDD;
+    
+    }
+    .achievements-section {
   
+      max-width: 310px; 
+      padding: 1rem; /* Padding for the entire section */
+      border-radius: 1.2rem; /* Rounded corners */
+      margin: 4rem auto;
+      border: none;
+   
+    }
+    .achievements-content {
+      border: none;
+      box-shadow: 0px 4px 80px rgba(248, 252, 0, 0.156);
+    }
+    
+    .text-container p{
+
+      text-align: center;
+     
+    }
+
+    .details h3{
+
+      padding: 4px 20px;
+      width: auto;
+      border-radius: 20px;
+      font-size: medium;
+      font-weight: 300;
+      
+    }
+    .details p{
+      text-align: center;
+    }
+
+    .head-1 h3{
+       background-color: #f907071b;
+       color: #ad1919c8;
+    }
+    .head-2 h3{
+      background-color: #bbe7fe52;
+      color: #166996;
+    }
+ 
+    .head-3 h3{
+      background-color: #e1ec1952;
+      color: #8f9609;
+    }
+
+    .head-4 h3{
+      background-color: #15f30935;
+      color: #10a008d2;
+    }
+
     #contact,
     footer {
       height: 40vh; /* Set height for contact and footer sections */
