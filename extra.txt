@@ -1,0 +1,33 @@
+<div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/folio.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Portfolio</h2>
+            <p class="date">October 2024 - Present</p>
+            <p class="pay">Personal portfolio showcasing projects, skills, and experience with a focus on sleek design and seamless navigation.</p>
+            <div class="lang">
+              <button>HTML</button>
+              <button>JavaScript</button>
+              <button>Css3</button>
+              <button>Bootstrape</button>
+            
+             </div>
+            <div class="btn-container baseline">
+              <button
+                class="btn btn-color-2 project-btn btn-2"
+                onclick="location.href='https://github.com/anany-more09/Portfolio'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn btn-2"
+                onclick="location.href='https://itsanany.netlify.app'"
+              >
+              Website
+              </button>
+            </div>
+          </div>

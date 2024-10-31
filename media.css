@@ -7,6 +7,10 @@
     .menu-links {
       transform: translateX(-100%); /* Ensure menu is hidden offscreen */
     }
+    
+    .expert{
+      display: none;
+    }
   }
   
   @media screen and (max-width: 777px)
@@ -44,7 +48,7 @@
       display: flex; /* Show hamburger navigation */
       position: relative; /* Allow positioning */
       background-color: white;
-      gap: 9rem;
+      gap: 14rem;
       
     }
   
@@ -82,6 +86,25 @@
       top: 0; /* Stick to the top of the viewport */
       z-index: 999; /* Ensure it stays on top of other elements */
     }
+
+    .expert{
+      display: flex;
+    }
+    
+    .experience-section{
+      display: none;
+    }
+
+    
+    .expert-title h2{
+      font-size: x-large;
+  
+    }
+    footer ul {
+
+      gap: 3rem; /* Space between icons */
+    }
+
     .section__text {
 
       align-self: center;
@@ -94,7 +117,7 @@
     .details {
       background-color: var(--bg-white); /* Using your existing CSS variable */
       padding: 14px;
-      border-radius: 1.2rem;
+      border-radius: 0.5rem;
       box-shadow: 0px 4px 1000px rgba(227, 233, 225, 0.462);
       transition: transform 0.3s ease;
       flex: 1 1 calc(25% - 20px); 
@@ -136,7 +159,7 @@
       
     }
     .details p{
-      text-align: center;
+      text-align: left;
     }
 
     .head-1 h3{
@@ -158,13 +181,17 @@
       color: #10a008d2;
     }
 
+    .hamburger-icon{
+      margin-bottom: 0.7rem;
+    }
+
     #contact,
     footer {
       height: 40vh; /* Set height for contact and footer sections */
     }
     #profile {
-      height: 83vh; /* Set height for profile section */
-      margin-bottom: 0; /* Remove bottom margin */
+      height: 78vh; /* Set height for profile section */
+      margin-bottom: 1rem; /* Remove bottom margin */
     }
     article {
       font-size: 1rem; /* Set font size for articles */
@@ -188,8 +215,9 @@
     .experience-sub-title {
       font-size: 1.25rem; /* Set font size for experience subtitles */
     }
+
     .logo img {
-      width: 80px; /* Set width for logo image */
+      width: 40px; /* Set width for logo image */
     }
     .nav-links {
       flex-direction: column; /* Arrange nav links vertically */
