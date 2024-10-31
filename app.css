@@ -144,13 +144,13 @@ a:hover {
 }
 
 .menu-links li {
-  margin-bottom: 1.5rem; /* Add space between list items */
+  margin-bottom: 1rem; /* Add space between list items */
 }
 
 .menu-links a {
   color: #212529; /* Darker text color */
   text-decoration: none; /* Remove default underline */
-  font-size: 1rem; /* Font size */
+  font-size: 0.5rem; /* Font size */
   text-align: left; /* Align text to the left */
   border-bottom: 2px dotted #dee2e6; /* Dotted underline */
   padding-bottom: 0.5rem; /* Add padding for the underline */
@@ -245,7 +245,7 @@ section {
 
   align-self: center;
   text-align: center;
-  box-shadow: 0 3px 20px rgba(249, 255, 247, 0.462);
+  box-shadow: 0 4px 20px rgba(249, 255, 247, 0.462);
   padding: 1.6rem;
   border-radius: 20px;
 }
@@ -869,7 +869,8 @@ footer p {
 .dibba {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem; /* Space between the cards */
+  gap: 1rem; /* Space between the cards */
+  justify-content: center;
 }
 
 .pro-box {
